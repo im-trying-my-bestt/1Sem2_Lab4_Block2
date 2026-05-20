@@ -18,7 +18,7 @@ namespace struct_lab_student
 
         public Student(string lineWithAllData)
         {
-            string[] persn = lineWithAllData.Trim().Split(' ');
+            string[] persn = lineWithAllData.Trim().Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries);
 
             surName = persn[0];//string ""
             firstName = persn[1];
